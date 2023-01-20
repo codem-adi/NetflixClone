@@ -1,0 +1,94 @@
+.nav_bar {
+     color: #ffffff;
+     position: fixed;
+     width: 100%;
+     top: 0px;
+     z-index: 999;
+     background: linear-gradient(to top, transparent 0%, rgb(0, 0, 0, .2) 50%);
+
+     &.scrolled {
+          background-color: black;
+     }
+
+     .container {
+          display: flex;
+          justify-content: space-between;
+          align-items: center;
+          padding: 0px 50px;
+          // flex-direction: column;    
+          height: 70px;
+
+          .left {
+               display: flex;
+               align-items: center;
+
+               img {
+                    margin: 0px 20px;
+                    height: 25px;
+               }
+
+               .nav_content{
+                    // span {
+                         margin: 0px 20px;
+                         text-decoration: none;
+                         color: white;
+                    // }
+               }
+
+
+          }
+
+          .right {
+               display: flex;
+               align-items: center;
+
+               img {
+                    margin: 0px 20px;
+                    height: 25px;
+                    border-radius: 50%;
+                    cursor: pointer;
+               }
+
+               span {
+                    margin: 0px 20px;
+
+               }
+
+               .extra_options {
+                    position: relative;
+                    cursor: pointer;
+
+                    span {
+                         margin-left: 10px;
+                    }
+
+                    .options {
+                         display: none;
+                         border-radius: 10px;
+                         // box-shadow: -1px -1px 2px 2px gray;
+
+                         span {
+                              text-align: center;
+                              width: 70px;
+                              padding: 15px 10px;
+                              margin: 0px;
+                         }
+                    }
+
+
+                    .active {
+                         // border: 2px solid green;
+                         display: flex;
+                         flex-direction: column;
+                         align-items: center;
+                         position: absolute;
+                         background: var(--main--colour);
+                         left: -15px;
+                         top: 200%;
+                    }
+
+               }
+          }
+     }
+
+}

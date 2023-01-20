@@ -1,0 +1,10 @@
+.Home{
+     /* height: 50px;
+     display: flex;
+     justify-content: space-around;
+     align-items: center; */
+     background: var(--main--colour);
+     color: #d6d6d6;
+     overflow: hidden;
+     padding-bottom: 25px;
+}

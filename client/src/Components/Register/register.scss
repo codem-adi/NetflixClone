@@ -1,0 +1,178 @@
+.register {
+     width: 100vw;
+     height: 100vh;
+     // background: url("https://cdn.wallpapersafari.com/24/74/zgeTuV.jpg");
+
+     background-image: linear-gradient(to top, rgba(0, 0, 0, 0.616) 30%, rgba(0, 0, 0, 0.185) 50%),
+          url("https://cdn.wallpapersafari.com/24/74/zgeTuV.jpg");
+     display: flex;
+     flex-direction: column;
+     align-items: center;
+     // padding: 0px 50px;
+
+     .messageBox {
+          background: transparent;
+          position: absolute;
+          top: 10px;
+          display: flex;
+          justify-content: flex-start;
+          align-items: center;
+          margin: 0px;
+          padding: 0px;
+          // opacity: 0;
+
+          .sucess {
+               color: var(--main--colour);
+               border-left: 7px solid #6fd97d;
+               padding: 15px 10px;
+               margin-right: 20px;
+               background: #ffffff;
+               border-radius: 5px;
+               transform: translateY(-100px);
+               // outline: 5px solid #6fd97d;
+               // outline-offset: 5px;
+
+
+          }
+
+          .error {
+               color: var(--main--colour);
+               border-left: 7px solid #fa5453;
+               padding: 15px 10px;
+               margin-right: 20px;
+               background: #ffffff;
+               border-radius: 5px;
+               // outline: 5px solid #fa5453;
+               // outline-offset: 5px;
+               transform: translateY(-100px);
+
+
+
+               // color: var(--main--colour);   
+               // height: 100%;
+
+
+
+          }
+
+          .animate {
+               animation: pop;
+               animation-duration: 5s;
+
+
+               @keyframes pop {
+                    0% {
+                         transform: translateY(-100px);
+                    }
+
+                    20% {
+                         transform: translateY(0px);
+                    }
+
+                    80% {
+                         transform: translateY(0px);
+                    }
+
+                    100% {
+                         transform: translateY(-100px);
+                    }
+               }
+          }
+
+     }
+
+     .top {
+          width: 100%;
+          display: flex;
+          justify-content: space-between;
+          align-items: center;
+          height: 50px;
+          padding-top: 5px;
+
+          img {
+               width: 120px;
+               margin-left: 50px;
+
+          }
+
+          button {
+               padding: 5px 10px;
+               background: red;
+               border: none;
+               color: white;
+               border-radius: 3px;
+               margin-right: 50px;
+               cursor: pointer;
+          }
+
+     }
+
+     .container {
+          // margin: ;
+          height: 100%;
+          color: white;
+          // border: 2px solid green;
+          text-align: center;
+          width: 35%;
+          display: flex;
+          flex-direction: column;
+          justify-content: center;
+
+          h1 {
+               font-size: 55px;
+               margin-bottom: 0px;
+          }
+
+          p {
+               font-size: 14px;
+          }
+
+          .input {
+               display: flex;
+               align-items: center;
+               width: 100%;
+               position: relative;
+
+               .messageTag {
+                    display: flex;
+                    // justify-content: center;
+                    align-items: center;
+                    position: absolute;
+                    color: red;
+                    // background-color: #ffffff;
+                    // height: 80%;
+                    bottom: -30px;
+                    padding: 5px;
+                    opacity: 0;
+               }
+
+               input {
+                    padding: 17px 10px;
+                    width: 70%;
+                    border: none;
+
+                    &:focus-visible {
+                         border: none;
+                         outline: none;
+                    }
+               }
+
+               button {
+                    width: 40%;
+                    padding: 10px 15px;
+                    font-size: 25px;
+                    background: red;
+                    color: white;
+                    border: none;
+                    cursor: pointer;
+
+                    i {
+                         padding-left: 5px;
+                    }
+               }
+          }
+
+
+     }
+
+}

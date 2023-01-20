@@ -1,0 +1,158 @@
+.login {
+     width: 100vw;
+     height: 100vh;
+     // background: url("https://cdn.wallpapersafari.com/24/74/zgeTuV.jpg");
+
+     background-image: linear-gradient(to top, rgba(0, 0, 0, 0.616) 30%, rgba(0, 0, 0, 0.185) 50%),
+          url("https://cdn.wallpapersafari.com/24/74/zgeTuV.jpg");
+     display: flex;
+     flex-direction: column;
+     align-items: center;
+     // padding: 0px 50px;
+
+     .error {
+          color: var(--main--colour);
+          position: absolute;
+          border-left: 7px solid #fa5453;
+          padding: 15px 10px;
+          margin-right: 20px;
+          background: #ffffff;
+          border-radius: 5px;
+          // outline: 5px solid #fa5453;
+          // outline-offset: 5px;
+          transform: translateY(-100px);
+          z-index: 999;
+     }
+
+     .animate {
+          animation: pop;
+          animation-duration: 5s;
+
+
+          @keyframes pop {
+               0% {
+                    transform: translateY(-100px);
+               }
+
+               20% {
+                    transform: translateY(0px);
+               }
+
+               80% {
+                    transform: translateY(0px);
+               }
+
+               100% {
+                    transform: translateY(-100px);
+               }
+          }
+     }
+
+     .top {
+          width: 100%;
+          display: flex;
+          justify-content: space-between;
+          align-items: center;
+          height: 50px;
+          padding-top: 5px;
+
+          img {
+               width: 120px;
+               margin-left: 50px;
+
+          }
+
+          button {
+               padding: 5px 10px;
+               background: red;
+               border: none;
+               color: white;
+               border-radius: 3px;
+               margin-right: 50px;
+               cursor: pointer;
+          }
+
+     }
+
+     .container {
+          // margin: ;
+          height: 100%;
+          color: white;
+          text-align: center;
+          width: 25%;
+          display: flex;
+          flex-direction: column;
+          justify-content: center;
+
+          form {
+               background-color: rgba(0, 0, 0, 0.85);
+               // border: 2px solid red;     
+               padding: 5px 50px;
+               display: flex;
+               flex-direction: column;
+               align-items: flex-start;
+               border-radius: 8px;
+
+               h1 {
+                    width: 100%;
+                    // border: 2px solid green;
+                    text-align: start;
+               }
+
+               .inputEmail,
+               .inputpassword {
+                    padding: 15px;
+                    background: #333333;
+                    margin-bottom: 30px;
+                    width: 90%;
+                    border-radius: 8px;
+                    border: none;
+                    color: white;
+                    font-size: 16px;
+                    // width: 50%;
+
+                    &:focus {
+                         background-color: #454545;
+                         border: none;
+                         outline: none;
+                    }
+               }
+
+               button {
+                    background: #e50914;
+                    color: white;
+                    border-radius: 8px;
+                    width: 100%;
+                    font-size: 16px;
+                    font-weight: 400;
+                    padding: 15px 0px;
+                    margin-bottom: 50px;
+               }
+
+               p {
+                    color: #737373;
+
+                    .gotoLogin {
+                         color: white;
+                         font-size: 18px;
+                         cursor: pointer;
+
+                         // &:hover{
+                         // border-bottom: 1px solid currentColor;
+                         // }
+                    }
+               }
+
+               .securityDesc {
+                    font-size: 14px;
+                    text-align: left;
+
+                    a {
+                         font-size: 13px;
+                         color: #0a0dbb;
+                    }
+               }
+          }
+     }
+
+}
