@@ -1,7 +1,6 @@
 # NetflixClone
+### 👉 Let's Go👈
 ### I have created this web site using the MERN stack 
-
-  
  - Tech Used
     - Mongo DB
     - Express JS
@@ -27,9 +26,9 @@
     - A randowm movie will be featured every time.
   - Storage
     - Mongo DB
-      - The user details as well as the details of every playlist and movie is stored in different collection
-      - Authentication on the user input to verify its not somthing harmfu to the server
-      - converting the input to text or number so that there will be no consequences
+      - The user details as well as the details of every playlist and movie is stored in different collection.
+      - Authentication on the user input to verify its not somthing harmfu to the server.
+      - converting the input to text or number so that there will be no consequences.
       
     - FireBase
       - It is use for the storage of the video and images.
@@ -39,7 +38,27 @@
       
 ### Few view Of the project
     
-   ![hello](https://images.ctfassets.net/3s5io6mnxfqz/3qYlrsjfuRzOrGBvGW3iog/fed82014f0f060443e86780b450495bc/AdobeStock_113882591.jpeg)
+    This is the login page which is compulsory 💪 to do before going to the content or home screen 🍿. 
+
+   ![Login](https://github.com/codeman-adiitya/NetflixClone/blob/main/ScreenShoot/login.png) 
+   
+    If you dont have account 😱 then you can go to SignUp page which lock like this 👇
+   
+   ![Sign Up](https://github.com/codeman-adiitya/NetflixClone/blob/main/ScreenShoot/signup.png)
+   
+    We do check the passwrod length ⚖️ which sold be fulfilled before moving forward.
+   
+   ![Password length](https://github.com/codeman-adiitya/NetflixClone/blob/main/ScreenShoot/passwordRequirment.png)
+   
+    To show that the content is not static 🧍🏻 you can see its getting data from server and the data is not loading because server is not running🏃🏻‍♀️🏃🏻‍♀️.
+   
+   ![Error](https://github.com/codeman-adiitya/NetflixClone/blob/main/ScreenShoot/ServerIsNotRunnignError.png)
+   
+    Successfuly 🤟 got the data from the server.
+   
+   ![Movie And List From Server](https://github.com/codeman-adiitya/NetflixClone/blob/main/ScreenShoot/FetchingMvieFromServer.png)
+   
+    Trailer play 📽️ on hover 🫵.
+   
+   ![Playing trailer on hover](https://github.com/codeman-adiitya/NetflixClone/blob/main/ScreenShoot/OnHoverTrailerPlay.png)
     
-    
-  
